@@ -1,4 +1,4 @@
-# This is Team 11 Fron-End Project
+# This is Team 11 Fron-End Project Register_Component_Steven
 
 Team Members:
 
