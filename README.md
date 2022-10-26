@@ -1,14 +1,3 @@
-# This is Team 11 Fron-End Project
-
-Team Members:
-
-- Steven
-- Lily
-
-test changes
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
