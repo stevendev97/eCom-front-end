@@ -3,29 +3,24 @@ import {
     Typography,
     TextField,
     Button,
+    Box,
+    Paper
   } from "@mui/material";
-import { makeStyles, withStyles } from 'tss-react/mui'
+import { styled } from '@mui/system'
 import React, {useState} from 'react';
 import { useForm } from "react-hook-form";
+import Style from './customInputStyle';
 
 
-// const Usestyles = makeStyles((theme: any) => ({
-//     heading: {
-//       textAlign: "center",
-//       margin: theme.spacing(1, 0, 4),
-//     },
-//     submitButton: {
-//       marginTop: theme.spacing(4),
-//     },
-// }));
-//vdff
+const StyledPaper = styled(Paper, {})(Style.paper)
+
+const StyledButton = styled(Button, {})(Style.btn)
 
 function Login(){
-    // const {heading, submitButton} = Usestyles();
     const [name, setName] = useState<string>();
     return (
-        <Container maxWidth='xs'>
-       <Typography variant="h4">
+      <StyledPaper>
+       <Typography  variant="h4" sx={{textAlign: "center", margin:[1,0,3]}}>
         Log In 
       </Typography>
       <form>
@@ -44,16 +39,15 @@ function Login(){
           fullWidth
           required
         />
-        
-        <Button
+        <StyledButton
           type="submit"
           fullWidth
           variant="contained"
           color="primary">
           Log In
-        </Button>
+        </StyledButton>
         </form>
-        </Container>
+       </StyledPaper>
     );
     
 };
