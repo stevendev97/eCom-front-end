@@ -1,5 +1,9 @@
 type customInputStyle = {
-   btn: any;
+   btn: {
+      backgroundColor: string,
+      marginTop: number,
+      borderRedius: number,
+    };
    paper: any;
  };
 
